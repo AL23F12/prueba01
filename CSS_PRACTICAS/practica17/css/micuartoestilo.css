@@ -1,0 +1,23 @@
+div.fondo
+ {
+ width:500px;
+ height:300px;
+
+ background: url(imagenes/f.jpg) repeat;
+ border:2px solid black;
+ }
+div.caja
+{
+ width:400px;
+ height:200px;
+ margin:30px 50px;
+ border:1px solid black;
+ background-color:#ffffff;
+opacity:0.5;
+}
+div.caja p
+{
+margin:30px 40px;
+font-weight:bold;
+color:#000000;
+}

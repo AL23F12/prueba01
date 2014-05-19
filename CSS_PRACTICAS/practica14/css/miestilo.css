@@ -1,0 +1,47 @@
+/* este es mi primer estilo */
+   body
+    {
+     /*sirve para que ponga una imagen de fondo en mi html*/
+     background-image:url('s.jpg');
+     /*sirve para que mi imagen de fondo no se repita*/
+     background-repeat:no-repeat;
+     /*sirve para que mi imagen de fondo no se mueva*/
+     background-attachment:fixed;
+     /*sirve para que ponga la posicion de mi imgen donde quiera*/
+     background-position:center;
+     /*sirve para que ponga mi imagen del tamaño que quiera*/
+     background-size:2000px 1000px;
+     }
+   h1
+    {
+     /*sirve para que le ponga color  mi texto y lo centre*/
+     text-align:center;
+     color:pink;
+    }
+
+   h2
+    {
+    /*sirve para que le ponga color  mi texto y lo centre*/
+     text-align:center;
+     color:yellow;
+    }
+ a:link
+   {
+   color:blue;
+   text-decoration:none;
+  }
+ a:hover
+   {
+   color:green;
+  }
+ 
+ a:active
+   {
+   color:orange;
+   }
+
+a:visited
+   {
+   color:pink;
+   
+  }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet">
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>
+        <!-- necesario*/ -->
+	</head>
+    
+    <body>
+        <div data-role="page" id="principal">
+	<div data-role="header">
+		<h1>Dias para Mi Cumpleaños</h1>
+	</div>
+	<div data-role="content" align="center">
+      <h2>Bienvenido</h2>
+      <p> La pagina servira para saber cuantos dias faltan para tu cumpleaños y poderlo celebrar
+      </p>
+	</div>
+    <div align="right">
+    	<a href="#datos" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" >
+        Comenzar
+        </a>
+        </div>
+	<div data-role="footer">
+		<h4>Rosa Maria Morales Arenas y Manuela Téllez Gómez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="datos">
+	<div data-role="header">
+		<h1>Nombre</h1>
+	</div>
+	<div data-role="content" align="center">	
+<input id="TxtNombre" placeholder="Pon tu Nombre" required>
+	</div>
+    <div align="center">
+   <a href="#principal" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left">
+        Atras
+        </a>	
+        <a id="Siguiente_Nombre" href="#fechas" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right">
+        Siguiente
+        </a>	
+        </div>
+	<div data-role="footer">
+		<h4>Rosa Maria Morales Arenas y Manuela Téllez Gómez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="fechas">
+	<div data-role="header">
+		<h1>Nacimiento</h1>
+	</div>
+<div data-role="content">
+     <div align="center" data-role="controlgroup" data-type="horizontal">
+      <div style="width:100px; float:left; padding:10px">
+		Dia
+        <input id="DiaCumple" type="number" max="31" min="1">
+      DD
+      </div>
+     
+       <div style="width:100px; float:left;padding:10px">
+         Mes
+         <input id="MesCumple" type="number" max="12" min="1">
+        MM
+       </div>
+       
+       <div style="width:100px; float:left;padding:10px">
+        Año
+         <input id="YearCumple" type="number" max="15" min="97">	
+	    AAAA
+       </div>
+     </div>
+    <div align="center" style="clear:both;">
+      <a href="#datos" data-role="button" data-inline="true" data-icon="arrow-l" 
+      data-iconpos="left">
+        Atras
+        </a>	
+        <a id="Siguiente_Fecha" href="#resultado" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right">
+        Siguiente
+        </a>
+    </div>
+</div>
+	<div data-role="footer">
+		<h4>Rosa Maria Morales Arenas y Manuela Téllez Gómez</h4>
+	</div>
+</div>
+
+<div data-role="page" id="resultado" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Dias para Celebrar</h1>
+	</div>
+	<div data-role="content">	
+    <div id="MNombre" class="finales">
+    </div>
+    <div id="MDias" class="finales">
+    </div>
+	<div id="MCumple" class="finales">
+    </div>
+    <div id="MFelicidades" class="finales">
+    </div>
+    <div id="MEdad" class="finales">
+    </div>
+    </div>
+	<div data-role="footer">
+		<h4>Rosa Maria Morales Arenas y Manuela Téllez Gómez</h4>
+	</div>
+</div>
+    </body>
+
+</html>
